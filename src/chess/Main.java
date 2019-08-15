@@ -18,12 +18,11 @@ public class Main {
         Player p2 =new Player(Player.WHITE);
         
         //option 1: if run the below two code,3d chessboard init
-        Gui gui = new Gui(3);
-        Board board =new ChessBoard3D(gui,p1,p2);
+//        Gui gui = new Gui(3);
+//        Board board =new ChessBoard3D(gui,p1,p2);
         //option2 if run the below two code, regular chessboard init 
-//        Gui gui = new Gui();
-//         
-//        Board board =new ChessBoard(gui,p1,p2);
+        Gui gui = new Gui();         
+        Board board =new ChessBoard(gui,p1,p2);
         
         
         board.getCurBoard().initPieceOnBoard(p1);

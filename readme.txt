@@ -118,35 +118,35 @@ below is my square pics
 			if curX=destX, piece no move
 
 
-	3.1 pawn – can move forward 1 or 2 on that piece’s FIRST move, 1 forward afterwards. 
+	3.1 pawn 鈥� can move forward 1 or 2 on that piece鈥檚 FIRST move, 1 forward afterwards. 
 		As white and black pawn has different direction. checkYdirection for black pawn(1) and white pawn(-1)
 		for the first move , pawn can move two step. so need to check if there is any piece block its way
 		after first move ,1 forward afterward, as long as the direction if correct.
 
-	3.2 Castle/Rook – can move horizontal or vertical unlimited number of spaces as long as the way is clear of other pieces
+	3.2 Castle/Rook 鈥� can move horizontal or vertical unlimited number of spaces as long as the way is clear of other pieces
 		this method shared by rook and queen, so it is in piece class
 		First,call move_Hor_Ver() method 
 		second,call checkXdirection and checkYdirection to get specific direction
 		third, call isNoBlock() to check if other piece block its way
 
 
-	3.3 Bishop – can move on the diagonal unlimited number of spaces as long as the way is clear of other pieces
+	3.3 Bishop 鈥� can move on the diagonal unlimited number of spaces as long as the way is clear of other pieces
 		this method shared by bishop and queen, so it is in piece class
 		First,call moveDiagonal method to check if it is move diagonal
 		second,call checkXdirection and checkYdirection to get specific direction
 		third, call isNoBlock() to check if other piece block its way
 
-	3.4 Knight – moves in an “L” pattern of 2-1 or 1-2 in any direction, the path does not need to be clear
+	3.4 Knight 鈥� moves in an 鈥淟鈥� pattern of 2-1 or 1-2 in any direction, the path does not need to be clear
 
 		Math.abs(destX - curX)    Math.abs(destY - curY)
 				2							1
 				1							2
 		the above move is valid 
-	3.5 Queen – 
+	3.5 Queen 鈥� 
 		can move in any direction unlimited number of spaces as long as the way is clear of other pieces
 		Queen move like Rook and Bishop
 	
-	3.6 King – 
+	3.6 King 鈥� 
 		can move in any direction 1 space
 		As king can move in any direction 1 space
 		As long as Math.abs(destX - curX) is 0 or 1 and Math.abs(destY - curY) is 0 or 1 , the move is valid
