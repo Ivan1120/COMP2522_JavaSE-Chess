@@ -22,10 +22,10 @@ public class Queen extends Piece {
     public Queen(int x, int y, int color) {
         super(x, y, color);
         //for output with jar file
-        java.net.URL bimgURL = Bishop.class.getResource("/icons/bQueen.png");    
-        java.net.URL wimgURL = Bishop.class.getResource("/icons/wQueen.png");    
-        setIcon(color,new ImageIcon(bimgURL),new ImageIcon(wimgURL)); 
-    //    setIcon(color, "icons/bQueen.png", "icons/wQueen.png");
+//        java.net.URL bimgURL = Bishop.class.getResource("/icons/bQueen.png");    
+//        java.net.URL wimgURL = Bishop.class.getResource("/icons/wQueen.png");    
+//        setIcon(color,new ImageIcon(bimgURL),new ImageIcon(wimgURL)); 
+        setIcon(color, "icons/bQueen.png", "icons/wQueen.png");
     }
     /**
      * to check if queen move valid

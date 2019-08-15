@@ -24,10 +24,10 @@ public class Pawn extends Piece {
     public Pawn(int x, int y, int color) {
         super(x, y, color);
         //for output with jar file
-        java.net.URL bimgURL = Bishop.class.getResource("/icons/bPawn.png");    
-        java.net.URL wimgURL = Bishop.class.getResource("/icons/wPawn.png");    
-        setIcon(color,new ImageIcon(bimgURL),new ImageIcon(wimgURL)); 
-       // setIcon(color, "icons/bPawn.png", "icons/wPawn.png");
+//        java.net.URL bimgURL = Bishop.class.getResource("/icons/bPawn.png");    
+//        java.net.URL wimgURL = Bishop.class.getResource("/icons/wPawn.png");    
+//        setIcon(color,new ImageIcon(bimgURL),new ImageIcon(wimgURL)); 
+        setIcon(color, "icons/bPawn.png", "icons/wPawn.png");
         isFirstMove = true;
     }
 

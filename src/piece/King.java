@@ -24,10 +24,10 @@ public class King extends Piece {
     public King(int x, int y, int color) {
         super(x, y, color);
         //for output with jar file
-        java.net.URL bimgURL = Bishop.class.getResource("/icons/bKing.png");    
-        java.net.URL wimgURL = Bishop.class.getResource("/icons/wKing.png");    
-        setIcon(color,new ImageIcon(bimgURL),new ImageIcon(wimgURL)); 
-    //    setIcon(color, "icons/bKing.png", "icons/wKing.png");
+//        java.net.URL bimgURL = Bishop.class.getResource("/icons/bKing.png");    
+//        java.net.URL wimgURL = Bishop.class.getResource("/icons/wKing.png");    
+//        setIcon(color,new ImageIcon(bimgURL),new ImageIcon(wimgURL)); 
+        setIcon(color, "icons/bKing.png", "icons/wKing.png");
     }
 
     /**

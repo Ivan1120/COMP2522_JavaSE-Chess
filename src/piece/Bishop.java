@@ -26,10 +26,10 @@ public class Bishop extends Piece {
     public Bishop(int x, int y,int color) {
         super(x, y,color);
         //for output with jar file
-        java.net.URL bimgURL = Bishop.class.getResource("/icons/bBishop.png");    
-        java.net.URL wimgURL = Bishop.class.getResource("/icons/wBishop.png");    
-        setIcon(color,new ImageIcon(bimgURL),new ImageIcon(wimgURL));  
-     //   setIcon(color,"icons/bBishop.png","icons/wBishop.png");      
+//        java.net.URL bimgURL = Bishop.class.getResource("/icons/bBishop.png");    
+//        java.net.URL wimgURL = Bishop.class.getResource("/icons/wBishop.png");    
+//        setIcon(color,new ImageIcon(bimgURL),new ImageIcon(wimgURL));  
+        setIcon(color,"icons/bBishop.png","icons/wBishop.png");      
     }
     
     

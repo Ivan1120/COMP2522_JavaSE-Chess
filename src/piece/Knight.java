@@ -24,10 +24,10 @@ public class Knight extends Piece {
     public Knight(int x, int y, int color) {
         super(x, y, color);
         //for output with jar file
-        java.net.URL bimgURL = Bishop.class.getResource("/icons/bKnight.png");    
-        java.net.URL wimgURL = Bishop.class.getResource("/icons/wKnight.png");    
-        setIcon(color,new ImageIcon(bimgURL),new ImageIcon(wimgURL)); 
-      //  setIcon(color, "icons/bKnight.png", "icons/wKnight.png");
+//        java.net.URL bimgURL = Bishop.class.getResource("/icons/bKnight.png");    
+//        java.net.URL wimgURL = Bishop.class.getResource("/icons/wKnight.png");    
+//        setIcon(color,new ImageIcon(bimgURL),new ImageIcon(wimgURL)); 
+        setIcon(color, "icons/bKnight.png", "icons/wKnight.png");
     }
 
     /**
