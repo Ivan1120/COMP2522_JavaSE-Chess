@@ -1,5 +1,7 @@
 package piece;
 
+import javax.swing.ImageIcon;
+
 import board.ChessBoard;
 import chess.Piece;
 import chess.Player;
@@ -19,7 +21,11 @@ public class Rook extends Piece {
      */
     public Rook(int x, int y, int color) {
         super(x, y, color);
-        setIcon(color, "icons/bRook.png", "icons/wRook.png");
+        //for output with jar file
+        java.net.URL bimgURL = Bishop.class.getResource("/icons/bRook.png");    
+        java.net.URL wimgURL = Bishop.class.getResource("/icons/wRook.png");    
+        setIcon(color,new ImageIcon(bimgURL),new ImageIcon(wimgURL)); 
+    //    setIcon(color, "icons/bRook.png", "icons/wRook.png");
     }
     /**
      * to check if rook move valid

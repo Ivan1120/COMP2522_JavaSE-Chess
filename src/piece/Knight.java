@@ -1,5 +1,7 @@
 package piece;
 
+import javax.swing.ImageIcon;
+
 import board.ChessBoard;
 import chess.Piece;
 import chess.Player;
@@ -21,7 +23,11 @@ public class Knight extends Piece {
      */
     public Knight(int x, int y, int color) {
         super(x, y, color);
-        setIcon(color, "icons/bKnight.png", "icons/wKnight.png");
+        //for output with jar file
+        java.net.URL bimgURL = Bishop.class.getResource("/icons/bKnight.png");    
+        java.net.URL wimgURL = Bishop.class.getResource("/icons/wKnight.png");    
+        setIcon(color,new ImageIcon(bimgURL),new ImageIcon(wimgURL)); 
+      //  setIcon(color, "icons/bKnight.png", "icons/wKnight.png");
     }
 
     /**

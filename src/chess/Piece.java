@@ -246,6 +246,20 @@ public abstract class Piece implements Serializable {
         }
     };
 
+    
+    // for export jar file with image
+    public void setIcon(int color, ImageIcon img1, ImageIcon img2) {
+        switch (color) {
+        case Player.WHITE:
+            pieceIcon = img2;
+            break;
+
+        case Player.BLACK:
+            pieceIcon = img1;
+            break;
+        }
+        
+    }
     /**
      * PieceIcon getter
      * 

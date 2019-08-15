@@ -17,6 +17,11 @@ import chess.Square;
 public class ChessBoard extends Board implements Serializable {
   
     /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
+
+    /**
      * Constructor of Board accept gui,player1,player2
      * initialize class move ,square and piece on board
      * 

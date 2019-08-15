@@ -16,6 +16,10 @@ import chess.Player;
  */
 public class ChessBoard3D extends Board implements Serializable {
    
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
     private ChessBoard[] board;
     
     /**

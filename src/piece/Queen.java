@@ -1,5 +1,7 @@
 package piece;
 
+import javax.swing.ImageIcon;
+
 import board.ChessBoard;
 import chess.Piece;
 import chess.Player;
@@ -19,7 +21,11 @@ public class Queen extends Piece {
      */
     public Queen(int x, int y, int color) {
         super(x, y, color);
-        setIcon(color, "icons/bQueen.png", "icons/wQueen.png");
+        //for output with jar file
+        java.net.URL bimgURL = Bishop.class.getResource("/icons/bQueen.png");    
+        java.net.URL wimgURL = Bishop.class.getResource("/icons/wQueen.png");    
+        setIcon(color,new ImageIcon(bimgURL),new ImageIcon(wimgURL)); 
+    //    setIcon(color, "icons/bQueen.png", "icons/wQueen.png");
     }
     /**
      * to check if queen move valid

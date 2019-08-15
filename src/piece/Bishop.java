@@ -2,8 +2,13 @@ package piece;
 
 
 
+import java.io.Console;
+
+import javax.swing.ImageIcon;
+
 import board.ChessBoard;
 import chess.Piece;
+import chess.Player;
 
 
 /**
@@ -20,8 +25,14 @@ public class Bishop extends Piece {
      */
     public Bishop(int x, int y,int color) {
         super(x, y,color);
-        setIcon(color,"icons/bBishop.png","icons/wBishop.png");      
+        //for output with jar file
+        java.net.URL bimgURL = Bishop.class.getResource("/icons/bBishop.png");    
+        java.net.URL wimgURL = Bishop.class.getResource("/icons/wBishop.png");    
+        setIcon(color,new ImageIcon(bimgURL),new ImageIcon(wimgURL));  
+     //   setIcon(color,"icons/bBishop.png","icons/wBishop.png");      
     }
+    
+    
     /**
      * to check if a bishop can move diagonally
      * if bishop move in the same board , the movement is the same as regular chess board movement
